@@ -13,7 +13,7 @@ class OrderService with ChangeNotifier {
 
   final String _token;
   final String _userId;
-  List<Order> _items = [];
+  final List<Order> _items = [];
   List<Order> get items => [..._items];
   int get itemsCount => _items.length;
 

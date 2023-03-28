@@ -8,7 +8,7 @@ import 'firebase_services.dart';
 
 class CompletedOrderServices with ChangeNotifier {
   final String _token;
-  List<CompletedOrder> _items = [];
+  final List<CompletedOrder> _items = [];
   List<CompletedOrder> get items => [..._items];
 
   CompletedOrderServices(this._token, this._items);
